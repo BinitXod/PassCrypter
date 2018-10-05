@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ko8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/switch1"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_marginLeft="12dp"
+        android:layout_toEndOf="@+id/switch1"
+        android:layout_toRightOf="@+id/backButton"
+        android:text="Encrypt"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/ko7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/switch1"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_alignEnd="@+id/ko6"
+        android:layout_alignRight="@+id/ko6"
+        android:text="Decrypt"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/ko6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ko5"
+        android:layout_alignStart="@+id/ko5"
+        android:layout_centerVertical="true"
+        android:text="Key(0-9999):"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ko5"
+        android:layout_alignBottom="@+id/ko5"
+        android:layout_alignLeft="@+id/title2"
+        android:layout_alignStart="@+id/title2"
+        android:text="Password"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:scrollbars="vertical"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ko5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ko4"
+        android:layout_alignStart="@+id/ko4"
+        android:layout_below="@+id/ko4"
+        android:layout_marginTop="10dp"
+        android:text="Password:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ko4"
+        android:layout_alignBottom="@+id/ko4"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:text="Username"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:scrollbars="vertical"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ko4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ko2"
+        android:layout_alignStart="@+id/ko2"
+        android:layout_below="@+id/ko2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Username:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/ko2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Title/Serv:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:checked="false"
+        android:textOff="DECRYPT"
+        android:textOn="ENCRYPT"
+        android:textSize="30sp"
+        tools:checked="false" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_toEndOf="@+id/ko7"
+        android:layout_toRightOf="@+id/ko7"
+        android:onClick="goBack"
+        android:text="BACK" />
+
+    <EditText
+        android:id="@+id/key1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ko6"
+        android:layout_alignBottom="@+id/ko6"
+        android:layout_alignLeft="@+id/ko8"
+        android:layout_alignStart="@+id/ko8"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ko6"
+        android:layout_alignStart="@+id/ko6"
+        android:layout_below="@+id/ko6"
+        android:text="Remember this Key" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ko2"
+        android:layout_alignBottom="@+id/ko2"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:scrollbars="vertical"
+        android:text="Title/Serv"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/copyUserButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/backButton"
+        android:onClick="copyUser"
+        android:text="Copy Username" />
+
+    <Button
+        android:id="@+id/copyPassButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/backButton"
+        android:layout_marginRight="5dp"
+        android:onClick="copyPass"
+        android:text="Copy Password" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:max="100"
+        android:progress="0"
+        android:layout_below="@+id/ko8"
+        android:progressDrawable="@drawable/custom_progress"
+        android:layout_marginHorizontal="35dp" />
+
+
+</RelativeLayout>
